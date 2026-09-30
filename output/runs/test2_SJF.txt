@@ -1,0 +1,25 @@
+SJF Scheduling Progress:
+[time 0] PID 10 NEW -> READY
+[time 0] PID 10 READY -> RUNNING
+[time 1] PID 11 NEW -> READY
+[time 2] PID 12 NEW -> READY
+[time 4] PID 13 NEW -> READY
+[time 5] PID 10 RUNNING -> COMPLETED
+[time 5] PID 13 READY -> RUNNING
+[time 6] PID 14 NEW -> READY
+[time 7] PID 13 RUNNING -> COMPLETED
+[time 7] PID 11 READY -> RUNNING
+[time 10] PID 11 RUNNING -> COMPLETED
+[time 10] PID 14 READY -> RUNNING
+[time 14] PID 14 RUNNING -> COMPLETED
+[time 14] PID 12 READY -> RUNNING
+[time 22] PID 12 RUNNING -> COMPLETED
+
+SJF Statistical Information:
+PID      Arrival Time   Start Time   End Time   Running Time   Waiting Time 
+10       0              0            5          5              0            
+13       4              5            7          2              1            
+11       1              7            10         3              6            
+14       6              10           14         4              4            
+12       2              14           22         8              12           
+Average Waiting Time: 4.60

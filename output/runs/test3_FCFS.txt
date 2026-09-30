@@ -1,0 +1,22 @@
+FCFS Scheduling Progress:
+[time 0 -> 2] CPU IDLE
+[time 2] PID 20 NEW -> READY
+[time 2] PID 21 NEW -> READY
+[time 2] PID 20 READY -> RUNNING
+[time 8] PID 22 NEW -> READY
+[time 8] PID 20 RUNNING -> COMPLETED
+[time 8] PID 21 READY -> RUNNING
+[time 10] PID 23 NEW -> READY
+[time 10] PID 21 RUNNING -> COMPLETED
+[time 10] PID 22 READY -> RUNNING
+[time 14] PID 22 RUNNING -> COMPLETED
+[time 14] PID 23 READY -> RUNNING
+[time 15] PID 23 RUNNING -> COMPLETED
+
+FCFS Statistical Information:
+PID      Arrival Time   Start Time   End Time   Running Time   Waiting Time 
+20       2              2            8          6              0            
+21       2              8            10         2              6            
+22       8              10           14         4              2            
+23       10             14           15         1              4            
+Average Waiting Time: 3.00

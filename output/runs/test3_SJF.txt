@@ -1,0 +1,22 @@
+SJF Scheduling Progress:
+[time 0 -> 2] CPU IDLE
+[time 2] PID 20 NEW -> READY
+[time 2] PID 21 NEW -> READY
+[time 2] PID 21 READY -> RUNNING
+[time 4] PID 21 RUNNING -> COMPLETED
+[time 4] PID 20 READY -> RUNNING
+[time 8] PID 22 NEW -> READY
+[time 10] PID 23 NEW -> READY
+[time 10] PID 20 RUNNING -> COMPLETED
+[time 10] PID 23 READY -> RUNNING
+[time 11] PID 23 RUNNING -> COMPLETED
+[time 11] PID 22 READY -> RUNNING
+[time 15] PID 22 RUNNING -> COMPLETED
+
+SJF Statistical Information:
+PID      Arrival Time   Start Time   End Time   Running Time   Waiting Time 
+21       2              2            4          2              0            
+20       2              4            10         6              2            
+23       10             10           11         1              0            
+22       8              11           15         4              3            
+Average Waiting Time: 1.25
